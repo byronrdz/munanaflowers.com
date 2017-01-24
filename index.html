@@ -15,11 +15,15 @@
 
 <style>
 
+body{
+	width:100%;
+}
+
 .subtitulo{
 	position:absolute;
 	top:10px;
-	left:10px;
-	width:2050px;
+	left:1%;
+	width:100%;
 	height:40px;
 	font-family:'Raleway',sans;
 	font-size:36px;
@@ -27,11 +31,11 @@
 }
 
 #bloq-titulo{
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:1500px;
+	position:relative;
+
+	width:100%;
 	height:120px;
+	display:block;
 }
 
 .boton_menu{
@@ -44,7 +48,7 @@
 .boton-home{
 	position:absolute;
 	top:-28px;
-	left:1220px;
+	left:96%;
 	z-index:10;
 }
 
@@ -62,105 +66,75 @@
 #boton-sp{
 	position:absolute;
 	top:85px;
-	left:1140px;		
+	left:90%;		
 }
 
 #boton-en{
 	position:absolute;
 	top:85px;
-	left:1200px;		
+	left:85%;		
 }
 
 
 
 #bloq-carousel{
-	position:absolute;
-	top:120px;
-	left:-20px;
-	width:1500px;
-	height:400px;
+	position:relative;
+
+	width:100%;
+	height:auto;
+	display:block;
 }
 
 #bloq-services{
-	position:absolute;
-	top:540px;
-	left:0px;
-	width:1500px;
-	height:550px;
+	position:relative;
+	padding-bottom:100px;
+	width:100%;
+	height:auto;
 	background:#df3030;
+	display:block;
 
 }
 
+.cuadro_serv{
+	position:relative;
+	left:70px;
+	top:70px;
+	display:inline-block;
+	width:400px;
+	height:220px;
+}
+
 .text1{
+	position:absolute;
+	left:150px;
+	top:0px;
+	display:inline-block;
+	width:200px;
+	height:220px;	
 	font-family:sans,arial;
 	font-size:17px;
 	color:#ffffff;
 }
 
-.cuadro1{
+div.icon{
 	position:absolute;
-	width:200px;
-	height:200px;
+	top:20px;
+	left:0px;
+	display:inline-block;
+	width:150px;
+	height:220px;
 }
 
-.icon{
-	position:absolute;
-}
 
-#icon_consultoria{
-	top:90px;
-	left:40px;
-}
 
-#icon_seleccion{
-	top:330px;
-	left:40px;
-}
 
-#icon_consolidacion{
-	top:90px;
-	left:480px;
-}
-#icon_calidad{
-	top:330px;
-	left:480px;
-}
-#icon_envio{
-	top:90px;
-	left:920px;
-}
-
-.txt_consultoria{
-	top:80px;
-	left:180px;
-}
-
-.txt_seleccion{
-	top:320px;
-	left:180px;
-}
-
-.txt_consolidacion{
-	top:80px;
-	left:640px;
-}
-
-.txt_calidad{
-	top:320px;
-	left:640px;
-}
-
-.txt_envio{
-	top:80px;
-	left:1050px;
-}
 
 #bloq-company{
-	position:absolute;
-	top:1090;
-	left:0px;
+	position:relative;
+
 	height:500px;
-	width:1500px;
+	width:100%;
+	display:block;
 }
 
 .txt-company{
@@ -186,12 +160,12 @@
 
 
 #bloq-galeria{
-	position:absolute;
-	top:1590px;
-	left:0px;
+
+	position:relative;
 	height:700px;
-	width:1500px;
+	width:100%;
 	background:#ffa8a8;
+	display:block;
 }
 
 #tabla_th{
@@ -225,10 +199,10 @@ td{
 
 #ventana{
 	position:absolute;
-	width:1010px;
+	width:90%;
 	height:575px;
 	top:20px;
-	left:150px;
+	left:8%;
 	border: 5px solid #ffffff;
 	z-index:4;
 }
@@ -237,7 +211,7 @@ td{
 	position:absolute;
 	padding-top:2px;
 	top:10px;
-	left:10px;
+	left:5%;
 	width:400px;
 	height:40px;
 	border-radius:4px;
@@ -252,7 +226,7 @@ td{
 
 #transparente{
 	position:absolute;
-	width:1500px;
+	width:100%;
 	height:700px;
 	top:0px;
 	left:0px;
@@ -263,12 +237,12 @@ td{
 
 
 #bloq-contacto{
-	position:absolute;
-	top:2290px;
-	left:0px;
+	position:relative;
+
 	height:320px;
-	width:1500px;
+	width:100%;
 	background:#284028;
+	display:block;
 }
 
 #logo-bn{
@@ -323,6 +297,8 @@ td{
 	font-size:12px;
 	text-align:center
 }
+
+
 
 
 </style>
@@ -518,57 +494,64 @@ $(function(){
 <div class="subtitulo en" style="color:#ffffff;">SERVICES</div>
 <div class="subtitulo sp" style="color:#ffffff;">SERVICIOS</div>
 
-        <img class="icon" id="icon_consultoria" src="imgs/icon_consultoria.png" alt="Advice" width="164" height="135">
-        <img class="icon" id="icon_seleccion" src="imgs/icon_seleccion.png" alt="Selection" width="137" height="150">
-        <img class="icon" id="icon_consolidacion" src="imgs/icon_consolidacion.png" alt="Consolidation" width="155" height="111">
-        <img class="icon" id="icon_calidad" src="imgs/icon_calidad.png" alt="Quality" width="158" height="125">
-        <img class="icon" id="icon_envio" src="imgs/icon_envio.png" alt="Tracing" width="122" height="110">
 
-	<div class="text1 cuadro1 txt_consultoria en"><h3>ADVICE</h3>
+
+	<div class="cuadro_serv">
+        <div class="icon"><img class="icon" id="icon_consultoria" src="imgs/icon_consultoria.png" alt="Advice" width="164" height="135"></div>
+	<div class="text1 en"><h3>ADVICE</h3>
 	We guide you to complete your orders with products that meet your requirements.
 	</div>
-
-	<div class="text1 cuadro1 txt_seleccion en"><H3>SELECTION</H3>
-	We select the products from an extensive list of suppliers to efficiently complete your orders.
-	</div>
-
-	<div class="text1 cuadro1 txt_consolidacion en"><H3>CONSOLIDATION</H3>
-	We take care of the logistics, transport and consolidation of your orders with products from the best suppliers.
-	</div>
-	
-	<div class="text1 cuadro1 txt_calidad en"><H3>QUALITY</H3>
-	We carry out quality control to guarantee the optimum state of your products.
-	</div>
-
-	<div class="text1 cuadro1 txt_envio en"><H3>TRACING</H3>
-	We take care of the management and tracing of your products with the shipping agencies until the shipment to the port of destination.
-	</div>
-
-        <div class="text1 cuadro1 txt_consultoria sp"><h3>CONSULTOR&IacuteA</h3>
+        <div class="text1 sp"><h3>CONSULTOR&IacuteA</h3>
 	Lo guiamos para completar sus pedidos con productos que satisfagan sus requerimientos.
         </div>
-
-        <div class="text1 cuadro1 txt_seleccion sp"><H3>SELECCI&OacuteN</H3>
+        </div>
+        
+	<div class="cuadro_serv">
+        <div class="icon"><img class="icon" id="icon_seleccion" src="imgs/icon_seleccion.png" alt="Selection" width="137" height="150"></div>
+	<div class="text1 en"><H3>SELECTION</H3>
+	We select the products from an extensive list of suppliers to efficiently complete your orders.
+	</div>
+        <div class="text1 sp"><H3>SELECCI&OacuteN</H3>
 	Seleccionamos los productos entre una amplia lista de proveedores para completar sus pedidos de manera eficiente.
         </div>
+        </div>
 
-        <div class="text1 cuadro1 txt_consolidacion sp"><H3>CONSOLIDACI&OacuteN</H3>
+	<div class="cuadro_serv">
+        <div class="icon"><img class="icon" id="icon_consolidacion" src="imgs/icon_consolidacion.png" alt="Consolidation" width="155" height="111"></div>
+	<div class="text1 en"><H3>CONSOLIDATION</H3>
+	We take care of the logistics, transport and consolidation of your orders with products from the best suppliers.
+	</div>
+        <div class="text1 sp"><H3>CONSOLIDACI&OacuteN</H3>
 	Nos encargamos de la logística, el transporte y la consolidación de sus pedidos con productos de los mejores proveedores.
         </div>
+        </div>
 
-        <div class="text1 cuadro1 txt_calidad sp"><H3>CALIDAD</H3>
+	<div class="cuadro_serv">
+        <div class="icon"><img class="icon" id="icon_calidad" src="imgs/icon_calidad.png" alt="Quality" width="158" height="125"></div>	
+	<div class="text1 en"><H3>QUALITY</H3>
+	We carry out quality control to guarantee the optimum state of your products.
+	</div>
+        <div class="text1 sp"><H3>CALIDAD</H3>
 	Realizamos control de calidad para garantizar el óptimo estado de sus productos.
         </div>
+        </div>
 
-        <div class="text1 cuadro1 txt_envio sp"><H3>SEGUIMIENTO</H3>
+	<div class="cuadro_serv">
+        <div class="icon"><img class="icon" id="icon_envio" src="imgs/icon_envio.png" alt="Tracing" width="122" height="110"></div>
+	<div class="text1 en"><H3>TRACING</H3>
+	We take care of the management and tracing of your products with the shipping agencies until the shipment to the port of destination.
+	</div>
+        <div class="text1 sp"><H3>SEGUIMIENTO</H3>
 	Nos encargamos de la gestión y el seguimiento de sus productos con las agencias de carga hasta el envío al puerto de destino.
         </div>
+        </div>
+
 </div>
 
 <div id="bloq-company">
-<div id="Company"></div>
-<div class="subtitulo en">COMPANY</div>
-<div class="subtitulo sp">EMPRESA</div>
+	<div id="Company"></div>
+	<div class="subtitulo en">COMPANY</div>
+	<div class="subtitulo sp">EMPRESA</div>
 
 	<div class="txt-company en">
 Munaflowers is a company with more than 20 years of experience in the export of high quality flowers. Thanks to our long history we have developed strong relationships with our partners and a great understanding of the market and its needs.<br><br>
@@ -596,9 +579,9 @@ Ofrecemos productos de gran belleza, alta calidad y un servicio &oacuteptimo enf
 
 
 <div id="bloq-galeria">
-<div id="Products"></div>
-<div class="subtitulo en">PRODUCTS</div>
-<div class="subtitulo sp">PRODUCTOS</div>
+	<div id="Products"></div>
+	<div class="subtitulo en">PRODUCTS</div>
+	<div class="subtitulo sp">PRODUCTOS</div>
 
 <div class="en" style="position:absolute; top:70px; left:60px; font-size:28px; font-family:'Raleway',sans;color:#b04040">LAST VARIETIES</div>
 <div class="sp" style="position:absolute; top:70px; left:60px; font-size:28px; font-family:'Raleway',sans;color:#b04040">&UacuteLTIMAS VARIEDADES</div>
