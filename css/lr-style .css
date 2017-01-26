@@ -7,8 +7,8 @@ body{
 	}
 
 div.logo-inicio{
-	width: 300;
-	height: 60;
+	width: 300px;
+	height: 60px;
 	}
 	
 img.logo-inicio{
@@ -74,7 +74,7 @@ div.boton-lang{
 
 #boton-sp{
 	position:absolute;
-	width:35;
+	width:35px;
 	height:40px;
 	left:35px;
 	top:0px;
@@ -84,7 +84,7 @@ div.boton-lang{
 
 #boton-en{
 	position:absolute;
-	width:35;
+	width:35px;
 	height:40px;
 	top:0px;
 	right:0px;
@@ -188,7 +188,7 @@ img.pict1{
 #bloq-galeria{
 
 	position:relative;
-	height:500;
+	height:500px;
 	width:100%;
 	background:#ffa8a8;
 	display:block;
