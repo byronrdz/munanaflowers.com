@@ -1,0 +1,354 @@
+body{
+	width:100%;
+}
+
+.titulo1{
+	display:none;
+	}
+
+div.logo-inicio{
+	width: 300;
+	height: 60;
+	}
+	
+img.logo-inicio{
+	width:100%;
+	height:auto;
+	}	
+
+.subtitulo{
+	position:absolute;
+	top:10px;
+	left:1%;
+	width:100%;
+	height:40px;
+	font-family:'Raleway',sans;
+	font-size:28px;
+	color:#b04040;
+}
+
+#bloq-titulo{
+	position:relative;
+	width:100%;
+	height:auto;
+	display:block;
+	letter-spacing:-1em;
+}
+
+div.boton_menu{
+	position:relative;
+	top:35px;
+	left:10px;
+	width:160px;
+	height:26px;
+	display:inline-block;
+	overflow:hide;
+	z-index:10;
+
+}
+
+img.boton_menu{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	}
+
+.boton-home{
+	position:absolute;
+	top:-28px;
+	left:96%;
+	z-index:10;
+}
+
+div.boton-lang{
+	position:absolute;
+	top:93%;
+	right:1% ;
+	width:110px;
+	height:40px;
+	display:inline-block;
+	overflow:hide;
+}
+
+#boton-sp{
+	position:absolute;
+	width:35;
+	height:40px;
+	left:35px;
+	top:0px;
+	display:inline;
+	z-index:10;
+}
+
+#boton-en{
+	position:absolute;
+	width:35;
+	height:40px;
+	top:0px;
+	right:0px;
+	display:inline;
+	z-index:10;
+}
+
+#bloq-carousel{
+	position:relative;
+
+	width:100%;
+	height:auto;
+	display:block;
+}
+
+#bloq-services{
+	position:relative;
+	padding-bottom:100px;
+	width:100%;
+	height:auto;
+	background:#df3030;
+	display:block;
+
+}
+
+.cuadro_serv{
+	position:relative;
+	left:20px;
+	top:20px;
+	display:inline-block;
+	width:300px;
+	height:200px;
+}
+
+.text1{
+	position:absolute;
+	left:120px;
+	top:0px;
+	display:inline-block;
+	width:150px;
+	height:220px;	
+	font-family:sans,arial;
+	font-size:14px;
+	color:#ffffff;
+	line-height:1.2em;
+}
+
+div.icon{
+	position:absolute;
+	top:20px;
+	left:0px;
+	display:inline-block;
+	width:100px;
+	height:147px;
+}
+
+#bloq-company{
+	position:relative;
+	height:auto;
+	width:100%;
+	padding-bottom:100px;
+	display:block;
+}
+
+div.txt-company{
+	position:relative;
+	top:50px;
+	left:1%;
+	width:40%;
+	min-width:200px;
+	height:300px;
+	background:#ffe4e4;
+	color:#606060;
+	font-family:serif,times;
+	font-size:14px;
+	display:inline-block;
+	overflow:auto;
+	padding:5px;
+	line-height:1.2em;
+}
+
+
+div.pict-company{
+	position:relative;
+	top:50px;
+	left:1%;
+	width:50%;
+	min-width:250px;
+	height:300px;
+	display:inline-block;
+	overflow:hidden;
+}
+
+img.pict1{
+	position:relaitve;
+	width:100%;
+	height:auto;
+}
+
+
+#bloq-galeria{
+
+	position:relative;
+	height:500;
+	width:100%;
+	background:#ffa8a8;
+	display:block;
+	padding-bottom:150px;
+	overflow:auto;
+}
+
+.elemento{
+	position:relative;
+	top:100px;
+	left:45px;
+	height:110px;
+	width:170px;
+	display:inline-block;
+}
+
+.thumb{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:170px;
+	height:110px;
+	display:inline-block;
+}
+
+
+.name{
+	position:absolute;
+	top:110px;
+	left:0px;
+	color:#f0f0f0;
+	background:#df3030;
+	text-align:center;
+	font-family:sans,arial;
+	font-size:10px;
+	height:15px;
+	width:170px;
+	display:inline-block;
+}
+
+.image{
+	height:120px;
+}
+
+#hotspot{
+	width:100%;
+	height:auto;
+	min-width:300px;
+	max-width:360px;
+	border: 2px solid #ffffff;	
+	}
+
+#ventana{
+	position:absolute;
+	width:85%;
+	height:auto;
+	min-width:250px;
+	max-width:360px;
+	top:10px;
+	left:5%;
+	z-index:4;
+}
+
+#nombre{
+	position:absolute;
+	padding-top:2px;
+	top:5px;
+	left:2%;
+	width:45%;
+	height:20px;
+	border-radius:1px;
+	text-align:center;
+	font-family:sans,arial;
+	font-size:18px;
+	background:#df3030;
+	color:#ffffff;
+	opacity:0.8;
+	z-index:6;
+}
+
+#transparente{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	background:#f0f0f0;
+	opacity:0.75;
+	z-index:2;
+}
+
+
+#bloq-contacto{
+	position:relative;
+	height:auto;
+	width:100%;
+	background:#603030;
+	display:block;
+	padding-bottom:100px;
+}
+
+#logo-bn{
+	position:absolute;
+	top:30px;
+	left:10%;
+}
+
+.contacto{
+	position:relative;
+	width:40%;
+	height:180px;
+	min-width:250px;
+	max-width:360px;
+	top:40px;
+	left:30px;
+	display:inline-block;
+	overflow:hide;
+	}
+
+.fcont{
+	color:#ffffff;
+	font-family:sans,arial;
+	font-size:16px;
+	padding:8px;
+}
+
+#line_v{
+	position:absolute;
+	top:0px;
+	left:99%;
+	width:3px;
+	height:120px;
+	border:1px solid white;
+
+}
+
+#quito{
+	position:relative;
+	top: 60px;
+	left: 50px;	
+	height:40px;
+	width:100%;
+	color:#ffffff;
+	font-family:sans,arial;
+	font-size:16px;
+	text-align:center;
+	display:inline-block;
+	vertical-align:-40px;
+}
+
+#info{
+	position:relative;
+	top: 60px;
+	left: 50px;	
+	height:40px;
+	width:100%;
+	color:#ffffff;
+	font-family:sans,arial;
+	font-size:10px;
+	display:inline-block;
+	overflow:hide;
+}
+
