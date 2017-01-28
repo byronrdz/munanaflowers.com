@@ -69,11 +69,14 @@ $(function(){
 
 	$(".boton-home").hover(
 		function(){
-			$(this).css("top","-31px");
+			if($(this).css("height")=="40px"){$(this).css("top","-23px");}
+			else{$(this).css("top","-31px");}
 			
 		},
 		function(){
-			$(this).css("top","-28px");
+			if($(this).css("height")=="40px"){$(this).css("top","-20px");}
+			else{$(this).css("top","-28px");}
+
 		}
 	);
 

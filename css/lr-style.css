@@ -23,9 +23,10 @@ img.logo-inicio{
 	width:100%;
 	height:40px;
 	font-family:'Raleway',sans;
-	font-size:12px;
+	font-size:18px;
 	color:#b04040;
 }
+
 
 #bloq-titulo{
 	position:relative;
@@ -59,10 +60,10 @@ img.boton_menu{
 .boton-home{
 	position:absolute;
 	top:-20px;
-	left:90%;
+	left:50%;
 	width:30px;
 	height:40px;
-	z-index:20;
+	z-index:8;
 }
 
 div.boton-lang{
@@ -113,6 +114,13 @@ div.boton-lang{
 
 }
 
+h3{
+	font-size:16px;
+	font-style:bold;
+	font-family:Arial,sans;
+	margin-left:-50px;
+}
+
 .cuadro_serv{
 	position:relative;
 	left:2px;
@@ -124,10 +132,10 @@ div.boton-lang{
 
 .text1{
 	position:absolute;
-	left:100px;
+	left:97px;
 	top:20px;
 	display:inline-block;
-	width:100px;
+	width:108px;
 	height:150px;	
 	font-family:sans,arial;
 	font-size:12px;
@@ -137,7 +145,7 @@ div.boton-lang{
 
 div.icon{
 	position:absolute;
-	top:40px;
+	top:60px;
 	left:0px;
 	display:inline-block;
 	width:150px;
@@ -165,7 +173,7 @@ div.txt-company{
 	left:1%;
 	width:80%;
 	min-width:200px;
-	height:340px;
+	height:390px;
 	background:#ffe4e4;
 	color:#606060;
 	font-family:serif,times;
@@ -173,7 +181,7 @@ div.txt-company{
 	display:inline-block;
 	overflow:auto;
 	padding:8px;
-	padding-bottom:20px;
+	padding-bottom:30px;
 	line-height:1.2em;
 	text-align:left;
 }
@@ -185,7 +193,7 @@ div.pict-company{
 	left:1%;
 	width:80%;
 	min-width:250px;
-	height:200px;
+	height:180px;
 	display:inline-block;
 	overflow:hidden;
 }
@@ -200,20 +208,35 @@ img.pict1{
 #bloq-galeria{
 
 	position:relative;
-	height:500px;
+	height:600px;
 	width:100%;
 	background:#ffa8a8;
 	display:block;
 	padding-bottom:150px;
-	overflow:auto;
+	margin:auto;
+}
+
+
+#gal-contenedor{
+	position:absolute;
+	margin:auto;
+	text-align:center;
+	left:5%;
+	top:100px;
+	width:90%;
+	height:450px;
+	background:#f0a0a0;
+	display:block;
+	overflow:scroll;
+	border-radius:8px; 
 }
 
 .elemento{
 	position:relative;
-	top:100px;
-	left:15px;
+	top:5px;
+	left:1%;
 	width:110px;
-	height:100px;
+	height:80px;
 	display:inline-block;
 }
 
@@ -222,7 +245,7 @@ img.pict1{
 	top:0px;
 	left:0px;
 	width:110px;
-	height:75px;
+	height:65px;
 	display:inline-block;
 }
 
@@ -233,7 +256,7 @@ img.pict1{
 
 .name{
 	position:absolute;
-	top:90px;
+	top:65px;
 	left:0px;
 	color:#f0f0f0;
 	background:#df3030;
@@ -273,14 +296,14 @@ img.pict1{
 #nombre{
 	position:absolute;
 	padding-top:2px;
-	top:5px;
+	top:4px;
 	left:2%;
 	width:45%;
 	height:20px;
 	border-radius:1px;
 	text-align:center;
 	font-family:sans,arial;
-	font-size:18px;
+	font-size:14px;
 	background:#df3030;
 	color:#ffffff;
 	opacity:0.8;
@@ -301,6 +324,7 @@ img.pict1{
 
 #bloq-contacto{
 	position:relative;
+	top:0px;
 	height:auto;
 	width:100%;
 	background:#284028;
@@ -319,7 +343,7 @@ img.pict1{
 .contacto{
 	position:relative;
 	width:40%;
-	height:110px;
+	height:120px;
 	min-width:250px;
 	max-width:360px;
 	top:10px;
@@ -356,7 +380,7 @@ img.pict1{
 	font-size:14px;
 	text-align:center;
 	display:inline-block;
-	vertical-align:-40px;
+
 }
 
 #info{

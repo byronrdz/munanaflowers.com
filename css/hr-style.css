@@ -7,8 +7,8 @@ body{
 	}
 
 div.logo-inicio{
-	width: 460;
-	height: 93;
+	width: 460px;
+	height: 93px;
 	min-width:360px;
 	max-width:550px;
 	}
@@ -32,19 +32,19 @@ img.logo-inicio{
 #bloq-titulo{
 	position:relative;
 	width:100%;
-	height:auto;
+	height:160px;
 	display:block;
 	letter-spacing:-1em;
 }
 
 div.boton_menu{
 	position:relative;
-	top:35px;
+	top:55px;
 	left:10px;
 	width:160px;
 	height:26px;
 	display:inline-block;
-	overflow:hide;
+	overflow:visible;
 	z-index:10;
 
 }
@@ -66,12 +66,12 @@ img.boton_menu{
 
 div.boton-lang{
 	position:absolute;
-	top:93%;
+	bottom:-20px;
 	right:1% ;
 	width:110px;
 	height:40px;
 	display:inline-block;
-	overflow:hide;
+	overflow:visible;
 }
 
 #boton-sp{
