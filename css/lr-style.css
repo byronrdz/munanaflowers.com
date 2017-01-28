@@ -18,12 +18,12 @@ img.logo-inicio{
 
 .subtitulo{
 	position:absolute;
-	top:10px;
+	top:2px;
 	left:1%;
 	width:100%;
 	height:40px;
 	font-family:'Raleway',sans;
-	font-size:18px;
+	font-size:14px;
 	color:#b04040;
 }
 
@@ -33,6 +33,7 @@ img.logo-inicio{
 	height:auto;
 	display:block;
 	letter-spacing:-1em;
+	padding-bottom:80px;
 }
 
 div.boton_menu{
@@ -64,10 +65,10 @@ img.boton_menu{
 
 div.boton-lang{
 	position:absolute;
-	top:93%;
-	right:1% ;
-	width:110px;
-	height:40px;
+	bottom:1px;
+	left:1px ;
+	width:90px;
+	height:36px;
 	display:block;
 	overflow:hidden;
 }
@@ -147,6 +148,8 @@ div.icon{
 	width:100%;
 	padding-bottom:100px;
 	display:block;
+	margin:auto;
+	text-align:center;
 }
 
 div.txt-company{
@@ -162,7 +165,8 @@ div.txt-company{
 	font-size:14px;
 	display:inline-block;
 	overflow:auto;
-	padding:5px;
+	padding:8px;
+	padding-bottom:20px;
 	line-height:1.2em;
 }
 
@@ -200,8 +204,8 @@ img.pict1{
 	position:relative;
 	top:100px;
 	left:45px;
-	height:110px;
-	width:170px;
+	height:105px;
+	width:145px;
 	display:inline-block;
 }
 
@@ -209,15 +213,15 @@ img.pict1{
 	position:absolute;
 	top:0px;
 	left:0px;
-	width:170px;
-	height:110px;
+	width:145px;
+	height:90px;
 	display:inline-block;
 }
 
 
 .name{
 	position:absolute;
-	top:110px;
+	top:90px;
 	left:0px;
 	color:#f0f0f0;
 	background:#df3030;
@@ -225,7 +229,7 @@ img.pict1{
 	font-family:sans,arial;
 	font-size:10px;
 	height:15px;
-	width:170px;
+	width:145px;
 	display:inline-block;
 }
 
@@ -234,6 +238,8 @@ img.pict1{
 }
 
 #hotspot{
+	top:30%;
+	height:0px;
 	width:100%;
 	height:auto;
 	min-width:300px;
@@ -243,12 +249,12 @@ img.pict1{
 
 #ventana{
 	position:fixed;
-	width:95%;
+	width:98%;
 	height:auto;
 	min-width:250px;
 	max-width:360px;
-	top:10px;
-	left:5px;
+	top:30%;
+	left:2%;
 	z-index:4;
 }
 
@@ -285,7 +291,7 @@ img.pict1{
 	position:relative;
 	height:auto;
 	width:100%;
-	background:#603030;
+	background:#284028;
 	display:block;
 	padding-bottom:100px;
 }
@@ -304,8 +310,8 @@ img.pict1{
 	height:180px;
 	min-width:250px;
 	max-width:360px;
-	top:40px;
-	left:30px;
+	top:10px;
+	left:10px;
 	display:inline-block;
 	overflow:hidden;
 	}
@@ -313,8 +319,8 @@ img.pict1{
 .fcont{
 	color:#ffffff;
 	font-family:sans,arial;
-	font-size:16px;
-	padding:8px;
+	font-size:12px;
+	padding:2px;
 }
 
 #line_v{
@@ -335,7 +341,7 @@ img.pict1{
 	width:100%;
 	color:#ffffff;
 	font-family:sans,arial;
-	font-size:16px;
+	font-size:14px;
 	text-align:center;
 	display:inline-block;
 	vertical-align:-40px;
