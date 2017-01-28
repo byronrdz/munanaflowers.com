@@ -33,7 +33,7 @@ img.logo-inicio{
 	height:auto;
 	display:block;
 	letter-spacing:-1em;
-	padding-bottom:50px;
+	padding-bottom:65px;
 }
 
 div.boton_menu{
@@ -62,12 +62,12 @@ img.boton_menu{
 	left:90%;
 	width:30px;
 	height:40px;
-	z-index:10;
+	z-index:20;
 }
 
 div.boton-lang{
 	position:absolute;
-	bottom:-15px;
+	bottom:-20px;
 	left:1px ;
 	width:110px;
 	height:40px;
@@ -119,16 +119,16 @@ div.boton-lang{
 	top:30px;
 	display:inline-block;
 	width:200px;
-	height:200px;
+	height:150px;
 }
 
 .text1{
 	position:absolute;
-	left:120px;
+	left:100px;
 	top:20px;
 	display:inline-block;
-	width:130px;
-	height:200px;	
+	width:100px;
+	height:150px;	
 	font-family:sans,arial;
 	font-size:12px;
 	color:#ffffff;
@@ -140,12 +140,12 @@ div.icon{
 	top:40px;
 	left:0px;
 	display:inline-block;
-	width:120px;
-	height:200px;
+	width:150px;
+	height:150px;
 }
 
 img.icon{
-	width:90px;
+	width:95px;
 	height:auto;
 }
 
@@ -185,7 +185,7 @@ div.pict-company{
 	left:1%;
 	width:80%;
 	min-width:250px;
-	height:300px;
+	height:200px;
 	display:inline-block;
 	overflow:hidden;
 }
@@ -222,7 +222,7 @@ img.pict1{
 	top:0px;
 	left:0px;
 	width:110px;
-	height:85px;
+	height:75px;
 	display:inline-block;
 }
 
@@ -241,7 +241,7 @@ img.pict1{
 	font-family:sans,arial;
 	font-size:10px;
 	height:15px;
-	width:145px;
+	width:110px;
 	display:inline-block;
 }
 
