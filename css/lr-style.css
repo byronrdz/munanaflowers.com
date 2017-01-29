@@ -342,14 +342,14 @@ img.pict1{
 
 .contacto{
 	position:relative;
-	width:40%;
-	height:120px;
+	width:90%;
+	height:160px;
 	min-width:250px;
 	max-width:360px;
 	top:10px;
 	left:10px;
 	display:inline-block;
-	overflow:hidden;
+	overflow:auto;
 	}
 
 .fcont{
@@ -395,4 +395,22 @@ img.pict1{
 	display:inline-block;
 	overflow:hidden;
 }
+
+ul{
+	font-size:12px;
+	color:#ffffff;
+	font-family:sans,arial;
+}
+
+a.links_interest{
+	line-height:1.4em;
+	color:#f0f0f0;
+}
+
+a.links_interes:hover{
+	text-decoration:underline;
+}
+
+
+
 

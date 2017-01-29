@@ -293,20 +293,21 @@ img.pict1{
 
 #logo-bn{
 	position:absolute;
-	top:50px;
-	left:20%;
+	top:80px;
+	left:22%;
 }
 
 .contacto{
 	position:relative;
-	width:40%;
-	height:180px;
+	width:32%;
+	height:290px;
 	min-width:360px;
 	max-width:550px;
 	top:60px;
-	left:50px;
+	left:2px;
 	display:inline-block;
-	overflow:hide;
+	overflow:hidden;
+
 	}
 
 .fcont{
@@ -321,23 +322,22 @@ img.pict1{
 	top:0px;
 	left:99%;
 	width:3px;
-	height:180px;
+	height:220px;
 	border:1px solid white;
-
 }
 
 #quito{
 	position:relative;
 	top: 60px;
 	left: 50px;	
-	height:40px;
+	height:30px;
 	width:100%;
 	color:#ffffff;
 	font-family:sans,arial;
 	font-size:20px;
 	text-align:center;
 	display:inline-block;
-	vertical-align:-40px;
+
 }
 
 #info{
@@ -350,6 +350,22 @@ img.pict1{
 	font-family:sans,arial;
 	font-size:12px;
 	display:inline-block;
-	overflow:hide;
+	overflow:hidden;
 }
+
+ul{
+	font-size:14px;
+	color:#ffffff;
+	font-family:sans,arial;
+}
+
+a.links_interest{
+	line-height:1.4em;
+	color:#f0f0f0;
+}
+
+a.links_interes:hover{
+	text-decoration:underline;
+}
+
 
