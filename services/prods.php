@@ -38,9 +38,9 @@
 	$cuenta = pg_fetch_result($result,0,0);
 	pg_free_result($result);
 	pg_close($con);
-
     	header('Content-type: application/json; charset=utf-8');
-//    	header('Content-encoding: gzip');
 	$datos = array('empresa'=>'Munanaflowers S.A.','elements'=>$cuenta ,'variedades'=>$datos);
-	echo json_encode($datos,JSON_UNESCAPED_SLASHES);
+	$jdata = json_encode($datos);
+	$jdata = str_replace('\\','',$jdata);
+	echo $jdata;
 ?>
