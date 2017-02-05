@@ -58,12 +58,13 @@ img.boton_menu{
 	}
 
 .boton-home{
-	position:absolute;
-	top:-20px;
-	left:50%;
+	position:fixed;
+	bottom:2px;
+	right:2px;
 	width:30px;
 	height:40px;
-	z-index:8;
+	z-index:10;
+	opacity:0.6;
 }
 
 div.boton-lang{
@@ -235,7 +236,7 @@ img.pict1{
 	position:relative;
 	top:5px;
 	left:1%;
-	width:110px;
+	width:112px;
 	height:80px;
 	display:inline-block;
 }

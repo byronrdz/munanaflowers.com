@@ -58,10 +58,11 @@ img.boton_menu{
 	}
 
 .boton-home{
-	position:absolute;
-	top:-28px;
-	left:96%;
+	position:fixed;
+	bottom:2px;
+	right:2px;
 	z-index:10;
+	opacity:0.6;
 }
 
 div.boton-lang{
@@ -202,7 +203,7 @@ img.pict1{
 	top:130px;
 	left:50px;
 	height:133px;
-	width:200px;
+	width:202px;
 	display:inline-block;
 }
 
@@ -230,9 +231,16 @@ img.pict1{
 	display:inline-block;
 }
 
+.th{
+	width:200px;
+	height:113px;
+}
+
+/*
 .image{
 	height:140px;
 }
+*/
 
 #hotspot{
 	width:100%;
@@ -243,7 +251,7 @@ img.pict1{
 	}
 
 #ventana{
-	position:absolute;
+	position:fixed;
 	width:85%;
 	height:auto;
 	min-width:360px;
@@ -271,13 +279,13 @@ img.pict1{
 }
 
 #transparente{
-	position:absolute;
+	position:fixed;
 	width:100%;
 	height:100%;
 	top:0px;
 	left:0px;
 	background:#f0f0f0;
-	opacity:0.75;
+	opacity:0.90;
 	z-index:2;
 }
 

@@ -9,20 +9,43 @@ $(function(){
 	$("#transparente").hide();
 	$("#nombre").hide();
 
-	$(".th").attr("width","200");
-	$(".th").attr("height","113");
+//	$(".th").attr("width","200");
+//	$(".th").attr("height","113");
 
-
-	$(".th").click(function(){
-		imagen = ($(this).attr("id"));
-		nombre = ($(this).attr("alt"));
-		$("<img id='hotspot' src=imgs/galeria/"+imagen+">").appendTo($("#ventana"))
-		$("<div id='nombre'>"+nombre+"</div>").appendTo($("#ventana"))
-		$("#hotspot").css({"z-index":"4","position":"absolute","top":"0px","left":"0px"});
-		$("#ventana").fadeIn();
-		$("#transparente").fadeIn();
-		$("#nombre").fadeIn();
+	var jqxhr = $.ajax({
+		url:"services/prods.php?elements=30&note=new"
 	});
+	
+	jqxhr.done(function(data){
+		
+		for(var i=0;i<data.elements;i++)
+		{
+			var id = data.variedades[i].image ;
+			$('<div class="elemento">'+
+				'<div class="thumb"><img class="th" id="'+id.split("/")[2]+
+				'" src="'+data.variedades[i].thumbnail+
+				'" alt="'+data.variedades[i].variedad+'"></div>'+
+				'<div class="name">'+data.variedades[i].variedad+'</div>'+
+				'</div>'
+			).appendTo($("#gal-contenedor"))
+		
+		}	
+		$(".th").on("click",function(){
+
+			imagen = ($(this).attr("id"));
+			nombre = ($(this).attr("alt"));
+			$("<img id='hotspot' src=imgs/galeria/"+imagen+">").appendTo($("#ventana"))
+			$("<div id='nombre'>"+nombre+"</div>").appendTo($("#ventana"))
+			$("#hotspot").css({"z-index":"4","position":"absolute","top":"0px","left":"0px"});
+			$("#ventana").fadeIn();
+			$("#transparente").fadeIn();
+			$("#nombre").fadeIn();
+		});
+		
+		$(".th").on("mouseenter",function(){$("body").css("cursor","crosshair")});
+		$(".th").on("mouseleave",function(){$("body").css("cursor","default")});
+	});
+
 
 	recuperar = function(){
 		$("#ventana").empty();
@@ -35,7 +58,7 @@ $(function(){
 	$("#transparente").click(function(){recuperar()});
 	$("body").keypress(function(){recuperar()});
 
-	$(".th").hover(
+	$(".th").on("hover",
 	function(){$("body").css("cursor","crosshair")},
 	function(){$("body").css("cursor","default")}
 	);
@@ -68,16 +91,8 @@ $(function(){
 
 
 	$(".boton-home").hover(
-		function(){
-			if($(this).css("height")=="40px"){$(this).css("top","-23px");}
-			else{$(this).css("top","-31px");}
-			
-		},
-		function(){
-			if($(this).css("height")=="40px"){$(this).css("top","-20px");}
-			else{$(this).css("top","-28px");}
-
-		}
+		function(){$(this).css("bottom","4px")},
+		function(){$(this).css("bottom","2px")}		
 	);
 
 
@@ -116,12 +131,14 @@ $(function(){
 });
 
 //Analytics--------------------------------------
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-90551782-1', 'auto');
+ga('send', 'pageview');
 
-  ga('create', 'UA-90551782-1', 'auto');
-  ga('send', 'pageview');
+
+
 
 
