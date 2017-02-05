@@ -91,8 +91,8 @@ $(function(){
 
 
 	$(".boton-home").hover(
-		function(){$(this).css("bottom","4px")},
-		function(){$(this).css("bottom","2px")}		
+		function(){$(this).css("bottom","47px")},
+		function(){$(this).css("bottom","45px")}		
 	);
 
 

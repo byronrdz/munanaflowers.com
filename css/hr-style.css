@@ -59,8 +59,8 @@ img.boton_menu{
 
 .boton-home{
 	position:fixed;
-	bottom:2px;
-	right:2px;
+	bottom:45px;
+	right:1px;
 	z-index:10;
 	opacity:0.6;
 }
