@@ -1,18 +1,18 @@
 <?php
-	$color = $_GET["color"];
-	$variedad = $_GET["var"];
-	$tipo_flor = $_GET["flower"];
-	$notas = $_GET["note"];
-	$elements = $_GET["elements"];
-	$page = $_GET["page"];
-	$img_dir= $_GET["img_dir"];		
-	if (is_null($color)) $color='%';
-	if (is_null($variedad)) $variedad='%';
-	if (is_null($tipo_flor)) $tipo_flor='%';
-	if (is_null($notas)) $notas='%';
-	if (is_null($page)) $page = 1;
-	if (is_null($elements)) $elements = 5;
-	if (is_null($img_dir)) $img_dir = htmlentities('imgs/galeria/');
+	$color = '%';
+	$variedad = '%';
+	$tipo_flor = '%';
+	$notas = '%';
+	$elements = 20;
+	$page = 1;
+	$img_dir = 'imgs/galeria/';
+	if(isset($_GET["color"])){$color = $_GET["color"];}
+	if(isset($_GET["var"])){$variedad = $_GET["var"];}
+	if(isset($_GET["flower"])){$tipo_flor = $_GET["flower"];}
+	if(isset($_GET["note"])){$notas = $_GET["note"];}
+	if(isset($_GET["elements"])){$elements = $_GET["elements"];}
+	if(isset($_GET["page"])){$page = $_GET["page"];}
+	if(isset($_GET["img_dir"])){$img_dir= $_GET["img_dir"];}
 	$page = ($page-1) * $elements;
 
 	include 'conn.php';
