@@ -12,40 +12,43 @@ $(function(){
 //	$(".th").attr("width","200");
 //	$(".th").attr("height","113");
 
-	var jqxhr = $.ajax({
-		url:"services/prods.php?elements=30&note=new"
-	});
-	
-	jqxhr.done(function(data){
-		
-		for(var i=0;i<data.elements;i++)
-		{
-			var id = data.variedades[i].image ;
-			$('<div class="elemento">'+
-				'<div class="thumb"><img class="th" id="'+id.split("/")[2]+
-				'" src="'+data.variedades[i].thumbnail+
-				'" alt="'+data.variedades[i].variedad+'"></div>'+
-				'<div class="name">'+data.variedades[i].variedad+'</div>'+
-				'</div>'
-			).appendTo($("#gal-contenedor"))
-		
-		}	
-		$(".th").on("click",function(){
-
-			imagen = ($(this).attr("id"));
-			nombre = ($(this).attr("alt"));
-			$("<img id='hotspot' src=imgs/galeria/"+imagen+">").appendTo($("#ventana"))
-			$("<div id='nombre'>"+nombre+"</div>").appendTo($("#ventana"))
-			$("#hotspot").css({"z-index":"4","position":"absolute","top":"0px","left":"0px"});
-			$("#ventana").fadeIn();
-			$("#transparente").fadeIn();
-			$("#nombre").fadeIn();
+	var load_thmbs = function(arg_url, container)
+	{
+		var jqxhr = $.ajax({
+			url: arg_url
 		});
+	
+		jqxhr.done(function(data){
 		
-		$(".th").on("mouseenter",function(){$("body").css("cursor","crosshair")});
-		$(".th").on("mouseleave",function(){$("body").css("cursor","default")});
-	});
-
+			for(var i=0;i<data.elements;i++)
+			{
+				var id = data.variedades[i].image ;
+				$('<div class="elemento">'+
+					'<div class="thumb"><img class="th" id="'+id.split("/")[2]+
+					'" src="'+data.variedades[i].thumbnail+
+					'" alt="'+data.variedades[i].variedad+'"></div>'+
+					'<div class="name">'+data.variedades[i].variedad+'</div>'+
+					'</div>'
+				).appendTo($(container))
+			}	
+		
+			$(".th").on("click",function(){
+				imagen = ($(this).attr("id"));
+				nombre = ($(this).attr("alt"));
+				$("<img id='hotspot' src=imgs/galeria/"+imagen+">").appendTo($("#ventana"))
+				$("<div id='nombre'>"+nombre+"</div>").appendTo($("#ventana"))
+				$("#hotspot").css({"z-index":"4","position":"absolute","top":"0px","left":"0px"});
+				$("#ventana").fadeIn();
+				$("#transparente").fadeIn();
+				$("#nombre").fadeIn();
+			});
+		
+			$(".th").on("mouseenter",function(){$("body").css("cursor","crosshair")});
+			$(".th").on("mouseleave",function(){$("body").css("cursor","default")});
+		});		
+	}
+	
+	load_thmbs("services/prods.php?elements=30&note=new","#gal-contenedor");
 
 	recuperar = function(){
 		$("#ventana").empty();
