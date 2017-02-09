@@ -26,7 +26,7 @@ $(function(){
 				$('<div class="elemento">'+
 					'<div class="thumb"><img class="th" id="'+id.split("/")[2]+
 					'" src="'+data.variedades[i].thumbnail+
-					'" alt="'+data.variedades[i].variedad+'"></div>'+
+					'" alt="'+data.variedades[i].variedad +' - '+ data.variedades[i].tipo_flor+'"></div>'+
 					'<div class="name">'+data.variedades[i].variedad+'</div>'+
 					'</div>'
 				).appendTo($(container))
@@ -35,8 +35,9 @@ $(function(){
 			$(".th").on("click",function(){
 				imagen = ($(this).attr("id"));
 				nombre = ($(this).attr("alt"));
-				$("<img id='hotspot' src=imgs/galeria/"+imagen+">").appendTo($("#ventana"))
-				$("<div id='nombre'>"+nombre+"</div>").appendTo($("#ventana"))
+				$("#hotspot").remove();
+				$("<img id='hotspot' src=imgs/galeria/"+imagen+">").appendTo($("#ventana"));
+				$("<div id='nombre'>"+nombre+"</div>").appendTo($("#ventana"));
 				$("#hotspot").css({"z-index":"4","position":"absolute","top":"0px","left":"0px"});
 				$("#ventana").fadeIn();
 				$("#transparente").fadeIn();
@@ -48,8 +49,16 @@ $(function(){
 		});		
 	}
 	
-	load_thmbs("services/prods.php?elements=30&note=new","#gal-contenedor");
-
+	load_thmbs("services/prods.php?elements=30&note=new&flower=Rose","#gal-1");
+	load_thmbs("services/prods.php?elements=30&flower=Gypsophila","#gal-2");
+	load_thmbs("services/prods.php?elements=30&flower=Ornitoghalum","#gal-3");
+	load_thmbs("services/prods.php?elements=30&flower=Craspedias","#gal-3");
+	load_thmbs("services/prods.php?elements=30&flower=Solidago","#gal-3");	
+	load_thmbs("services/prods.php?elements=30&flower=Lilium","#gal-3");		
+	load_thmbs("services/prods.php?elements=30&flower=Scabiosa","#gal-3");		
+	load_thmbs("services/prods.php?elements=30&flower=Veronicas","#gal-3");	
+	load_thmbs("services/prods.php?elements=30&flower=Limonium","#gal-3");				
+	
 	recuperar = function(){
 		$("#ventana").empty();
 		$("#ventana").fadeOut();

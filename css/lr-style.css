@@ -17,14 +17,16 @@ img.logo-inicio{
 	}	
 
 .subtitulo{
-	position:absolute;
-	top:2px;
+	position:relative;
+	top:6px;
 	left:1%;
-	width:100%;
-	height:40px;
+	width:98%;
+	height:45px;
 	font-family:'Raleway',sans;
-	font-size:18px;
+	font-size:28px;
 	color:#b04040;
+	display:block;
+	overflow:visible;
 }
 
 
@@ -112,7 +114,7 @@ div.boton-lang{
 	height:auto;
 	background:#df3030;
 	display:block;
-
+	border:1px solid #df3030;
 }
 
 h3{
@@ -125,7 +127,7 @@ h3{
 .cuadro_serv{
 	position:relative;
 	left:2px;
-	top:30px;
+	top:3px;
 	display:inline-block;
 	width:200px;
 	height:150px;
@@ -166,11 +168,12 @@ img.icon{
 	display:block;
 	margin:auto;
 	text-align:center;
+	border:1px solid white;
 }
 
 div.txt-company{
 	position:relative;
-	top:70px;
+	top:0px;
 	left:1%;
 	width:80%;
 	min-width:200px;
@@ -190,7 +193,7 @@ div.txt-company{
 
 div.pict-company{
 	position:relative;
-	top:50px;
+	top:2px;
 	left:1%;
 	width:80%;
 	min-width:250px;
@@ -215,15 +218,16 @@ img.pict1{
 	display:block;
 	padding-bottom:150px;
 	margin:auto;
+	border: 1px solid #ffa8a8;	
 }
 
 
 #gal-contenedor{
-	position:absolute;
+	position:relative;
 	margin:auto;
 	text-align:center;
-	left:5%;
-	top:100px;
+	left:2%;
+	top:0px;
 	width:90%;
 	height:450px;
 	background:#f0a0a0;
@@ -231,6 +235,30 @@ img.pict1{
 	overflow:scroll;
 	border-radius:8px; 
 }
+.gal{
+	position:relative;
+	width:98%;
+	height:auto;
+	top:0px;
+	left:1%;
+	display:block;
+	padding-bottom:15px;
+}
+
+.gal-subtitle{
+	position:relative;
+	top:1%;
+	left:2%;
+	width:98%;
+	height:auto;
+	display:block;
+	font-family:'Raleway',sans;
+	font-size:16px;
+	color:#b04040;
+	background:#ff9090;
+	padding:2px;
+}
+
 
 .elemento{
 	position:relative;
@@ -299,7 +327,7 @@ img.pict1{
 	padding-top:2px;
 	top:4px;
 	left:2%;
-	width:45%;
+	width:85%;
 	height:20px;
 	border-radius:1px;
 	text-align:center;
@@ -331,6 +359,7 @@ img.pict1{
 	background:#284028;
 	display:block;
 	padding-bottom:50px;
+	border:1px solid #284028;
 }
 
 #logo-bn{
@@ -347,7 +376,7 @@ img.pict1{
 	height:160px;
 	min-width:250px;
 	max-width:360px;
-	top:10px;
+	top:0px;
 	left:10px;
 	display:inline-block;
 	overflow:auto;
