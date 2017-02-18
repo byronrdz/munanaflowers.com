@@ -23,12 +23,16 @@ img.logo-inicio{
 	top:10px;
 	left:1%;
 	width:98%;
-	height:80px;
+	height:50px;
 	font-family:'Raleway',sans;
 	font-size:36px;
 	color:#b04040;
 	display:block;
 	overflow:visible;
+}
+
+hr{
+	border:1px solid #c0c0c0;
 }
 
 #bloq-titulo{
@@ -104,6 +108,28 @@ div.boton-lang{
 	display:block;
 }
 
+#bloq-news{
+	position:relative;
+	top:0px;
+	padding-bottom:0px;
+	width:100%;
+	height:auto;
+	background:#ffffff;
+	display:block;
+	border:1px solid #f0f0f0;
+}
+
+#widgetmain{
+	position:relative;
+	top:0px;
+	left:45%;
+	width:800px;
+	color:109010;
+}
+
+iframe{font-size:8px;}
+
+
 #bloq-services{
 	position:relative;
 	top:0px;
@@ -118,7 +144,7 @@ div.boton-lang{
 .cuadro_serv{
 	position:relative;
 	left:70px;
-	top:5px;
+	top:0px;
 	display:inline-block;
 	width:400px;
 	height:220px;
@@ -151,7 +177,7 @@ div.icon{
 	top:0px;
 	height:auto;
 	width:100%;
-	padding-bottom:120px;
+	padding-bottom:40px;
 	display:block;
 	border:1px solid white;
 }
@@ -163,7 +189,7 @@ div.txt-company{
 	width:40%;
 	min-width:300px;
 	height:350px;
-	background:#ffe4e4;
+	background:#ffffff;
 	color:#606060;
 	font-family:serif,times;
 	font-size:16px;
@@ -191,16 +217,76 @@ img.pict1{
 	height:auto;
 }
 
+#container{
+	margin:0px;
+	position:relative;
+	top:20px;
+	left:10%;
+	width:80%;
+	height:271px;
+	overflow:hidden;
+	letter-spacing:0em;
+}
+.pict{
+	margin:0px;
+	position:absolute;
+	top:10px;
+	width:100%;
+	height:271px;
+	background:#df3030;
+	overflow:hidden;
+	border:1px solid #df3030;
+}
+
+.frase{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:55%;
+	height:95%;	
+	color:#ffffff;
+	display:inline-block;
+	overflow:hidden;
+}
+	
+
+.foto{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:40%;
+	height:auto;
+	overflow:hidden;
+	display:inline-block;
+}
+
+p{
+	font-size:20px;
+	line-height:1.4em;
+	letter-spacing:0em;
+	font-family: serif,times;
+	font-style:oblique;
+}
+	
+p.texto_nombre{
+	font-size:26px;
+	font-style:normal;
+	line-height:1.1em;
+	text-align:right;
+}
+
+
 
 #bloq-galeria{
 	position:relative;
 	top:0px
 	height:auto;
 	width:100%;
-	background:#ffa8a8;
+	background:#ffd8d8;
 	display:block;
 	padding-bottom:30px;
-	border: 1px solid #ffa8a8;
+	border: 1px solid #ffd8d8;
+	margin-right:10px;
 }
 
 .gal{
@@ -223,7 +309,7 @@ img.pict1{
 	font-family:'Raleway',sans;
 	font-size:26px;
 	color:#b04040;
-	background:#ff9090;
+	background:#ffc0c0;
 	padding:2px;
 
 }

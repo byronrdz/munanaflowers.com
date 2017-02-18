@@ -140,7 +140,53 @@ $(function(){
 		$(".en").show()
 	});
 
-});
+	
+	
+	
+//-----Quotes Company--------------------------------------------------
+
+	var picts = ["#pict1","#pict2","#pict3"];
+	var n = picts.length;
+	var width = document.getElementById("container").offsetWidth;
+	$(picts[0]).css("left","0px"); 
+	$(picts[1]).css("left","-"+width+"px");
+	$(picts[2]).css("left","-"+2*width+"px");
+	var delta = (width/25);
+	var left_ = [0,-width,-2*width];
+	var intervalo = 0;
+
+	window.onresize=function(){
+		width = document.getElementById("container").offsetWidth;
+	$(picts[0]).css("left","0px"); 
+	$(picts[1]).css("left","-"+width+"px");
+	$(picts[2]).css("left","-"+2*width+"px");
+		delta = (width/25);
+		left_ = [0,-width,-2*width];		
+	}
+	
+	var movimiento = function(){
+		for(var i=0;i<n;i++){
+			if(left_[i] < width-delta*1.1){
+				left_[i] = left_[i] + delta;
+				$(picts[i]).css("left",left_[i]+"px");
+			}else{
+				clearInterval(intervalo);
+				left_[i] = -2*width;
+				$(picts[i]).css("left","-"+2*width+"px");;
+				tout=setTimeout(function(){intervalo = window.setInterval(movimiento, 20)},4500);
+
+			}
+		}
+	}
+
+	tout=setTimeout(function(){intervalo = window.setInterval(movimiento, 20)},4500);
+	document.getElementById("container").onclick = function(e){
+		clearInterval(intervalo);
+		clearTimeout(tout);
+		tout=setTimeout(function(){intervalo = window.setInterval(movimiento, 20)},15000);
+	}
+
+});		
 
 //Analytics--------------------------------------
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
