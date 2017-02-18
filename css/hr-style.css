@@ -443,14 +443,14 @@ p.texto_nombre{
 	top:0px;
 	left:99%;
 	width:3px;
-	height:390px;
+	height:350px;
 	border:1px solid white;
 }
 
 #quito{
 	position:relative;
 	top: 0px;
-	left: 50px;	
+	left: -20px;	
 	height:30px;
 	width:100%;
 	color:#ffffff;
