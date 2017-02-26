@@ -6,7 +6,7 @@
 			<link>https://www.munanaflowers.com</link>
 			<description>Munanaflowers RSS News Channel</description>
 			<image>
-				<url>imgs/munana-logo.jpg</url>
+				<url>https://www.munanaflowers.com/imgs/munana-logo.jpg</url>
 				<link>https://www.munanaflowers.com</link>
 				<title>Munanaflowers Logo</title>
 			</image>
