@@ -1,0 +1,156 @@
+<html>
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+	.noticia{
+		position:relative;
+		right:2px;
+		top:10px;
+		width:60%;
+		height:auto;
+		border:1px solid #206020;
+		border-right:10px solid #206020;
+		padding-bottom:10px;
+	}
+
+	.titulo{
+		position:relative;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:auto;
+		font-size:16px;
+		background:#206020;
+		color:white;
+		padding-top:10px;
+		padding-bottom:10px;
+		text-align:center;
+		
+	}
+
+	.fuente{
+		position:relative;
+		top:10px;
+		left:0px;
+		width:100%;
+		height:auto;
+		font-size:12px;
+		padding:2px;
+	}
+
+	.fecha{
+		position:relative;
+		top:10px;
+		left:0px;
+		width:40%;
+		height:auto;
+		font-size:12px;
+		padding:2px;
+		display:inline;
+
+	}
+	
+	.autor{
+		position:relative;
+		top:10px;
+		right:0px;
+		width:40%;
+		height:auto;
+		font-size:12px;
+		padding:2px;
+		display:inline;
+	}
+
+	.nota{
+		position:relative;
+		top:10px;
+		left:0px;
+		width:100%;
+		height:auto;
+		padding:2px;
+	}
+</style>
+</head>
+
+<body>
+	<script>
+	$(function(){
+	
+	$('.noticia').hide();	
+		
+	var rotativo = function(i){	
+		$.ajax({
+			url:"services/newsreader.php?ind="+i
+		}).done(function(data){
+			$('#titulo'+i).append(data.titulo);
+			$('#fecha'+i).append(data.fecha);
+			$('#nota'+i).append(data.nota);			
+			if(data.autor === undefined | data.autor == ""){fuente = data.fuente;}
+			else {fuente = data.fuente + "&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;" + data.autor;}
+			$('#fuente'+i).append(fuente);			
+			$('#noticia'+i).on("click",function(){
+				window.open(data.link);
+			});
+		});
+	}	
+
+	for(var j=0;j<5;j++){
+		rotativo(j);
+	}
+
+	var n = 1;
+	$('#noticia'+0).show();	
+	var t = setInterval(function(){
+		$('.noticia').slideUp();
+		$('#noticia'+n).slideDown();
+		(n<4)?n++:n=0;
+	},9000);
+
+	
+		
+	});	
+	</script>	
+
+	<div class="noticia" id="noticia0">
+		<div class="titulo" id="titulo0"></div>
+		<div class="fecha" id="fecha0"></div>
+		<div class="autor" id="autor0"></div>		
+		<div class="nota" id="nota0"></div>
+		<div class="fuente" id="fuente0"></div>
+	</div>
+	
+	<div class="noticia" id="noticia1">
+		<div class="titulo" id="titulo1"></div>
+		<div class="fecha" id="fecha1"></div>
+		<div class="autor" id="autor1"></div>		
+		<div class="nota" id="nota1"></div>
+		<div class="fuente" id="fuente1"></div>
+	</div>
+
+	<div class="noticia" id="noticia2">
+		<div class="titulo" id="titulo2"></div>
+		<div class="fecha" id="fecha2"></div>
+		<div class="autor" id="autor2"></div>		
+		<div class="nota" id="nota2"></div>
+		<div class="fuente" id="fuente2"></div>
+	</div>
+
+	<div class="noticia" id="noticia3">
+		<div class="titulo" id="titulo3"></div>
+		<div class="fecha" id="fecha3"></div>
+		<div class="autor" id="autor3"></div>		
+		<div class="nota" id="nota3"></div>
+		<div class="fuente" id="fuente3"></div>
+	</div>
+	
+		<div class="noticia" id="noticia4">
+		<div class="titulo" id="titulo4"></div>
+		<div class="fecha" id="fecha4"></div>
+		<div class="autor" id="autor4"></div>		
+		<div class="nota" id="nota4"></div>
+		<div class="fuente" id="fuente4"></div>
+	</div>
+	
+</body>
+
+</html>
