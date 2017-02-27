@@ -16,11 +16,11 @@ if($xml){
     $autor = $xml->channel->item[$ind]->author;
     $link = $xml->channel->item[$ind]->link;	
 	
-    $noticia['titulo'] =htmlentities((string) $titulo);
-    $noticia['fecha'] =htmlentities((string) $fecha);
-    $noticia['fuente'] =htmlentities((string) $fuente);
-    $noticia['autor'] =htmlentities((string) $autor);	
-    $noticia['link'] =htmlentities((string) $link);	
+    $noticia['titulo'] =(string) $titulo;
+    $noticia['fecha'] =(string) $fecha;
+    $noticia['fuente'] =(string) $fuente;
+    $noticia['autor'] =(string) $autor;	
+    $noticia['link'] =(string) $link;	
 
     $noticia['nota'] =(string) $nota;
     
