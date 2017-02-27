@@ -25,7 +25,7 @@ if($xml){
     $noticia['nota'] =(string) $nota;
     
     $noticia = json_encode($noticia);
-	$noticia = str_replace('\\','',$noticia);  
+	//$noticia = str_replace('\\','',$noticia);  
     header('Content-type: application/json; charset=utf-8');
     
     echo($noticia);
