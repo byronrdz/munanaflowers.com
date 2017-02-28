@@ -8,8 +8,9 @@ class SimpleXMLExtended extends SimpleXMLElement {
 }
 
 	$xmlstr =  	
-	"<rss version='2.0'>
+	"<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
 		<channel>
+			<atom:link href='https://www.munanaflowers.com/services/newschannel.php' rel='self' type='application/rss+xml' />
 			<title>Munanaflowers RSS News Channel</title>
 			<link>https://www.munanaflowers.com</link>
 			<description>Munanaflowers RSS News Channel</description>
@@ -39,7 +40,8 @@ class SimpleXMLExtended extends SimpleXMLElement {
 		$cont_pubdate = date('r',strtotime($line['pubdate']));
 		$pubDate = $item->addChild('pubDate',$cont_pubdate);
 
-		$author = $item->addChild('author',$line['author']);		
+		if(trim($line['author']) != ""){$author = $item->addChild('author',$line['author']);}
+		
 		$link = $item->addChild('link',$line['link']);
 		$guid = $item->addChild('guid',$line['guid']);
 		
@@ -58,5 +60,4 @@ class SimpleXMLExtended extends SimpleXMLElement {
 	$salida = str_replace("<?xml version=\"1.0\"?>","",$salida);
     header('Content-type: application/rss+xml; charset=utf-8');
 	echo $salida;
-
 ?>
