@@ -2,7 +2,8 @@
 $ind=0;
 if(isset($_GET['ind'])){$ind = intval($_GET['ind']);}
 
-$fuente = 'https://www.munanaflowers.com/pruebas-new-model/munanaflowers.com/services/newschannel.php';
+$fuente = 'https://www.munanaflowers.com/services/newschannel.php';
+
 $noticia = array();
 
     $xml = simplexml_load_file($fuente);

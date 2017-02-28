@@ -45,7 +45,7 @@ class SimpleXMLExtended extends SimpleXMLElement {
 		$link = $item->addChild('link',$line['link']);
 		$guid = $item->addChild('guid',$line['guid']);
 
-		$cont_description = "<div style='height:auto'><div style='width:16%;display:inline-block;overflow:hidden;vertical-align:middle'><img src= '".$line['image']."' width=100% alt=''></div><div style='padding-left:4px;display:inline-block; width:80%; height:auto; color:#606060;display:inline-block;overflow:hidden;vertical-align:middle;font-size:12px;'>".$line['description']."</div></div>"; 
+		$cont_description = "<div style='width:auto;height:auto'><div style='width:16%;display:inline-block;overflow:hidden;vertical-align:middle'><img src= '".$line['image']."' width=110 alt=''></div><div style='padding-left:4px;display:inline-block; width:80%; height:auto; color:#606060;display:inline-block;overflow:hidden;vertical-align:middle;font-size:12px;'>".$line['description']."</div></div>"; 
 		
 		
 		
