@@ -215,11 +215,40 @@ $(function(){
 	var news_n = 1;
 	$('#noticia'+0).show();	
 	var news_t = setInterval(function(){
-		$('.noticia').slideUp();
-		$('#noticia'+news_n).slideDown();
+		$('.noticia').hide();
+		$('#noticia'+news_n).show();
 		(news_n<4)?news_n++:news_n=0;
 	},9000);
 
+
+	
+//Widgete Weather-------------------------------------------------------------------------------------------------
+	
+	
+	var clima = function(data, wth_n){			
+		$('.wth_infoclima').empty();
+		$('#wth_ciudad').append('<a href="http://openweathermap.org/city/'+data[wth_n].ciudadid+'" target="_blank">'+data[wth_n].ciudad+'</a>');
+		$('#wth_icon').append('<img src="imgs/clima/'+data[wth_n].iconclima+'.png" width=60 alt="weather"/>');
+		$('#wth_coordenadas').append(data[wth_n].coords);		
+		$('#wth_temp').append(data[wth_n].temperatura+"\u00b0C");
+		$('#wth_humedad').append(data[wth_n].humedad+"\u0025");
+		$('#wth_presion').append(data[wth_n].presion);				
+		$('#wth_nubosidad').append(data[wth_n].nubes+"\u0025");				
+		$('#wth_viento').append(data[wth_n].vientospeed+"m/s&nbsp;"+data[wth_n].vientodir);				
+	}		
+	
+	$.ajax({
+		url:"services/weathereader.php"
+	}).done(function(data){
+		clima(data,0);
+		wth_cn = 1;	
+		wth_t = setInterval(function(){
+			clima(data,wth_cn);
+			(wth_cn<6) ? wth_cn++ : wth_cn = 0;		
+		} ,3500);
+	});	
+	
+	
 	
 //-----------------------------------------------------------------------------------------------------------------	
 });

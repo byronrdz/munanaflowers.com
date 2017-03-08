@@ -489,4 +489,177 @@ a.links_interes:hover{
 	text-decoration:underline;
 }
 
+/*----------News section---------------*/
 
+#bloq-news{
+	position:relative
+	top:0px;
+	left:0px;
+	width:100%;
+	height:auto;
+	border:1px solid #df3030;
+	padding-bottom:5px;
+}
+
+	.noticia{
+		position:relative;
+		left:5%;
+		top:0px;
+		width:60%;
+		height:220px;
+		border:1px solid #df3030;
+		border-right:1px solid #ffffff;
+		padding-bottom:10px;
+		display:inline-block;
+		overflow:hidden;
+	}
+
+	.titulo{
+		position:relative;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:auto;
+		font-size:14px;
+		background:#df3030;
+		color:white;
+		padding-top:8px;
+		padding-bottom:8px;
+		padding-left:5px;
+	}
+
+	.fuente{
+		position:relative;
+		top:-3px;
+		left:0px;
+		width:100%;
+		height:auto;
+		font-size:12px;
+		padding:2px;
+	}
+
+	.fecha{
+		position:relative;
+		top:-3px;
+		left:0px;
+		width:40%;
+		height:auto;
+		font-size:12px;
+		padding:2px;
+		display:inline;
+
+	}
+	
+	.autor{
+		position:relative;
+		top:-5px;
+		right:0px;
+		width:40%;
+		height:auto;
+		font-size:8px;
+		padding:2px;
+		display:inline;
+	}
+
+	.nota{
+		position:relative;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:auto;
+		padding:2px;
+		font-size:10px;
+	}
+
+/*----------Widget Weather------------------*/
+
+	#wth_clima{
+		position:relative;
+		top:0px;
+		left:5%;
+		width:30%;
+		height:220px;
+		display:inline-block;
+		overflow:hidden;
+		padding-left:10px;
+		border:0px solid red;
+	}
+
+	#wth_titulo{
+		position:relative;
+		top:0px;
+		left:-10px;
+		width:100%;
+		background:#df3030;
+		color:white;
+		padding-top:8px;
+		padding-bottom:8px;
+		padding-left:5px;
+	}
+	
+	#wth_ciudad{
+		position:relative;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:auto;
+		font-family:sans,Arial,Tahoma;
+		color:#404040;
+		font-size:18px;
+		font-weight:bold;
+	}	
+
+	#wth_icon{
+		position:relative;
+		top:-10px;
+		left:0px;
+		width:60px;
+		height:auto;
+		display:inline-block;
+		overflow:hidden;
+	}
+
+	#wth_temp{
+		position:relative;
+		top:-30px;
+		left:0px;
+		width:60px;
+		height:30px;
+		font-family:sans,Arial,Tahoma;
+		font-size:18px;
+		color:#404040;
+		font-weight:bold;
+		display:inline-block;
+	}	
+	
+	.wth_lbl{
+		position:relative;
+		left:0px;
+		display:inline-block;
+		width:25%;
+		background:#df3030;
+		font-family:sans,Arial,Tahoma;
+		font-size:12px;
+		font-weight:bold;
+		padding:1px;
+		color:white;
+	}
+
+	.wth_datos{
+		position:relative;
+		left:0px;
+		display:inline-block;
+		width:70%;
+		font-family:sans,Arial,Tahoma;
+		font-size:12px;
+		color:#404040;
+		border:1px solid #ffe8e8;
+	}
+
+	.wth_fila{
+		position:relative;
+		display:block;
+		font-size:12px;
+		line-height:1.4em;
+		top:-30px;
+	}
