@@ -56,6 +56,7 @@ class SimpleXMLExtended extends SimpleXMLElement {
 		$source->addAttribute('url',$line['source_url']);
 	}
 	pg_free_result($result);
+	pg_close($con);
 
 	$salida = ($sxe->asXML());
 	$salida = str_replace("<?xml version=\"1.0\"?>","",$salida);
